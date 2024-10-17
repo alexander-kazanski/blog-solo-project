@@ -1,0 +1,298 @@
+html, 
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: "Source Sans 3", sans-serif;
+    background-color: #FAFAFA;
+    --content-width-m: 25.875em;
+    max-width: 93.75em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: var(--content-width-m);
+    margin: auto;
+    background-color: #fff;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: dashed;
+}
+
+.icon-heading {
+    font-size: 0.875rem;
+}
+
+.icon img {
+    height: 1.4475em;
+    width: 1.4475em;
+    margin: 1.25em .25em 1.25em 1.25em;   
+}
+
+.icon p {
+    font-weight: bold;
+}
+
+.links {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.links a {
+    margin: 1.25em .25em 1.25em 1.25em;
+}
+.link-home,
+.link-about,
+.home-link:visited,
+.link-about:visited,
+.icon:visited {
+    cursor: pointer;
+    color: unset;
+    text-decoration: none;
+}
+
+.links a:last-of-type {
+    margin-right: 1.25em;
+}
+
+.month-header {
+    height: 18.3125em;
+    background-image: url('../images/month-header.png');
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    min-width: var(--content-width-m);
+    margin: .1em auto;    
+}
+
+.header-date {
+    position: absolute;
+    top: 6.15em;
+    right: 0;
+    bottom: 0;
+    left: 1.6666em;
+    font-family: sans-serif;
+    font-size: .75rem;
+}
+
+.header-title {
+    font-size: 2rem;
+    position: absolute;
+    top: 2.81em;
+    left: .625em;
+    bottom: 0;
+    right: 0;
+    min-width: 374px;
+}
+
+.header-title-caption {
+    font-size: sans-serif;
+    position: absolute;
+    top: 10.95em;
+    left: 1.25em;
+    bottom: 0;
+    right: 0;
+    min-width: 374px;
+}
+
+.blog-section {
+    min-width: var(--content-width-m);
+    display: flex;
+    justify-content: center;
+    margin: 2.125em auto auto auto;
+    flex-direction: column;
+  }
+  
+  .blog-section div {
+    display: flex;
+    justify-content: center;
+    gap: 1.625em;
+    flex-wrap: wrap;
+
+}
+
+.blog-item {
+    margin: 0 1.25em 2.5625em 1.25em;
+    padding: 0;
+    max-width: 23.375em;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.blog-item:visited {
+    color: unset;
+}
+
+.blog-item img {
+    margin-bottom: .875em;
+}
+
+.blog-item-date {
+    margin: 0 auto .5em 0;
+    font-weight: 400;
+}
+
+.blog-item-heading {
+    margin: 0 auto .5em 0
+}
+
+.blog-item-caption {
+    color: #505050;
+    margin: 0;
+    max-width: 19.31em;
+}
+
+.load-more {
+    min-width: var(--content-width-m);
+    display: flex;
+    margin: 1.6875em auto 2.9375em auto;
+    cursor: pointer;
+}
+
+.load-more-text {
+    margin: auto;
+    font-weight: bold;
+    color: #000;
+    text-decoration: underline;
+}
+
+footer {
+    color: #ECECEC;
+    background-color: #202020;
+    min-width: var(--content-width-m);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
+footer p {
+    margin: 2.3125em auto 0 auto;
+    font-weight: bold;
+}
+
+footer p:last-of-type {
+    margin: .5em auto 2.3125em auto;
+    font-weight: normal;
+}
+
+.blog-post {
+    min-width: var(--content-width-m);
+    margin-bottom: 2.1875em;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-post-date {
+    margin: 2em 1.25em 0 1.25em;
+}
+
+.blog-post-title {
+    font-size: 2.25rem;
+    margin: .03125em .515em 0 .515em;
+}
+.blog-post-caption {
+    margin: .9375em 1.25em 2.1875em 1.25em
+}
+
+.blog-post-img {
+    background-image: url("../images/month-header.png");
+    background-size: cover;
+    min-width: 23.375em;
+    min-height: 11.9375em;
+    margin: auto auto 2.1875em auto;
+    border-radius: .2em;
+    transition: min-width 2s, min-height 2s;
+}
+
+@media (min-width: 975px) {
+    .blog-post-img {
+        min-width: 61.1875em;
+        min-height: 30.5em
+    }
+}    
+
+.blog-post-subheading {
+    margin: 0 .83em 0 .83em
+}
+
+.recent-posts-title {
+        min-width: var(--content-width-m);
+        text-align: center;
+        font-weight: bold;
+        margin: 0 0 27px 0;
+}
+
+.rp {
+    margin-top: 0;
+}
+
+.about-me {
+    margin-bottom: 2.8125em;
+}
+
+.about-me-hero {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile-caption-container {
+    min-width: 21.93em;
+    transition: margin 2s;
+    margin-bottom: 0;
+}
+
+@media (min-width: 1080px) {
+    .about-me-hero {
+        flex-wrap: nowrap;
+    }
+    .profile-caption-container {
+        margin: 4.9em 1.25em 0 0;
+    }
+}
+
+#profile {
+    width: 182px;
+    height: 182px;
+    border-radius: 100px;
+    margin: 1.625em 1.25em 1.6875em 1.25em;
+}
+
+.greeting {
+    font-size: 2.18rem;
+    margin: 0 .571em 0 .571em;
+    min-width: 351px;
+}
+
+.profile-caption {
+    margin: 1em 1.25em 3.125em 1.25em;
+}
+
+@media (min-width: 1080px) {
+    .profile-caption {
+        margin-bottom: 0;
+    }
+}
+
+.about-subtitle {
+    margin: 0 .83333em;
+}
+
+.about-desc {
+    margin: 1em 1.25em;
+}
+
