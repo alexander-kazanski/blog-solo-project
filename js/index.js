@@ -1,10 +1,10 @@
-import { HeaderComponent } from '../components/HeaderComponent.js'
-import { MonthComponent } from '../components/MonthComponent.js'
+import { HeaderComponent } from '../components/HeaderComponent.js';
+import { MonthComponent } from '../components/MonthComponent.js';
 import { RecentBlogsComponent } from '../components/RecentBlogsComponent.js';
-import { FooterComponent } from "../components/FooterComponent.js"
-import { BlogPostComponent } from '../components/BlogPostComponent.js'
-import { RecentPostsComponent } from '../components/RecentPostsComponent.js'
-import { AboutMeHeroComponent } from '../components/AboutMeHeroComponent.js'
+import { FooterComponent } from "../components/FooterComponent.js";
+import { BlogPostComponent } from '../components/BlogPostComponent.js';
+import { RecentPostsComponent } from '../components/RecentPostsComponent.js';
+import { AboutMeHeroComponent } from '../components/AboutMeHeroComponent.js';
 
 const blogDataSet = {
     date: "JULY 23, 2022",
@@ -30,7 +30,7 @@ const blogDataSet = {
         "../images/blog-image-06.png"
     ]
     
-}
+};
 
 window.addEventListener("load", () => {
     if (window.location.href.includes('index')) {   
@@ -39,8 +39,8 @@ window.addEventListener("load", () => {
             MonthComponent(blogDataSet.date, blogDataSet.headline, blogDataSet.caption), 
             RecentBlogsComponent(blogDataSet.date, blogDataSet.thumbnailCaption, blogDataSet.thumbnailImgsLocationArray), 
             FooterComponent()
-        ]
-        document.querySelector("body").innerHTML += htmlComponentArray.join("")
+        ];
+        document.querySelector("body").innerHTML += htmlComponentArray.join("");
     } else if (window.location.href.includes('blog')) {
         const htmlComponentArray = [
             HeaderComponent(), 
@@ -48,15 +48,16 @@ window.addEventListener("load", () => {
             RecentPostsComponent(), 
             RecentBlogsComponent(blogDataSet.date, blogDataSet.thumbnailCaption, blogDataSet.thumbnailImgsLocationArray, false, 'rp'), 
             FooterComponent()
-        ]
-        document.querySelector("body").innerHTML += htmlComponentArray.join("")
+        ];
+        document.querySelector("body").innerHTML += htmlComponentArray.join("");
     } else if (window.location.href.includes('about')) {
         const htmlComponentArray = [
             HeaderComponent(), 
             AboutMeHeroComponent(), 
             RecentPostsComponent(), 
             RecentBlogsComponent(blogDataSet.date, blogDataSet.thumbnailCaption, blogDataSet.thumbnailImgsLocationArray, false, 'rp'), 
-            FooterComponent()]
-        document.querySelector("body").innerHTML += htmlComponentArray.join("")
+            FooterComponent()
+        ];
+        document.querySelector("body").innerHTML += htmlComponentArray.join("");
     }
 }); 
